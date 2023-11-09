@@ -1,0 +1,69 @@
+.App{
+  text-align: center;
+}
+
+form{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+
+input{
+  width: 30vw;
+  font-size: 2em;
+  text-align: center;
+  background-color: rgb(192, 187, 187);
+  opacity: 0.8;
+  color: white;
+  border-radius: 0.5em;
+  border: none;
+  padding: 5px;
+}
+
+.submit{
+  font-size: 1.5em;
+  padding: 5px;
+  margin: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.boxes{
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  gap: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-container input {
+  padding-right: 40px; /* Adjust this value to control the spacing between input and button */
+}
+
+.input-container button {
+  position: absolute;
+  right: 0;
+}
+
+@media only screen and (max-width: 768px){
+  .boxes{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input{
+    width: 60vw;
+    margin-left: 30px ;
+   
+  }
+}
