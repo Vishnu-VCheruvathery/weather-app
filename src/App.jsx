@@ -27,7 +27,7 @@ function App() {
    const fetchLocation = async (city) => {
       try {
          const response = await fetch(
-            `http://api.openweathermap.org/geo/1.0/direct?q=${city},${city},${city}&limit=5&appid=${import.meta.env.VITE_API_KEY}`
+            `https://api.openweathermap.org/geo/1.0/direct?q=${city},${city},${city}&limit=5&appid=${import.meta.env.VITE_API_KEY}`
          );
          const data = await response.json();
          if (data[0]) {
